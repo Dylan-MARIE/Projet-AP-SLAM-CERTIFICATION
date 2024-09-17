@@ -31,7 +31,7 @@
 
     echo "<main>";
     while($ligne = mysqli_fetch_array($res)) {
-        echo "<a href='photo.php?id=".$ligne['idPh']."'><img src='photos/".$ligne['nomPh']."' /></a>";
+        echo "<a href='photo.php?id=".$ligne['idPh']."'><img id='".$ligne['idPh']."' src='photos/".$ligne['nomPh']."' /></a>";
     }
     echo "</main>";
 
